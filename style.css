@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+button, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.font-open {
+    font-family: " Open Sans", cursive;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+#cok-satanlar .owl-carousel .item .product a {
+    overflow: hidden;
+}
+#cok-satanlar .owl-carousel .item .product img {
+    transition: transform 0.5s ease;
+}
+#cok-satanlar .owl-carousel .item .product img:hover {
+    transform: scale(1.1);
+}
+#cok-satanlar .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+#cok-satanlar .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+#cok-satanlar .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 35px;
+    color: lightskyblue;
+    margin-left: -4rem;
+    padding: 0 1rem;
+}
+#cok-satanlar .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+#cok-satanlar .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: lightskyblue;
+    margin-right: -4rem;
+    padding: 0 1rem;
+}
+
+#indirimli-urunler .grid .grid-item {
+    margin-right: 1.2rem;
+    margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

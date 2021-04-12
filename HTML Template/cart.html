@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>OnlineAV</title>
+</head>
+
+<body>
+    <!-- header kısmı -->
+    <header id="header">
+        <div class="strip  px-4 py-1 bg-light" style="display: flex; justify-content: space-between;">
+            <p class="font-size-12 text-black-50 m-0">OnlineAV</p>
+            <div class="font-size-14">
+                <a href="#" class="px-3 border-right border-left text-dark">Giriş</a>
+                <a href="#" class="px-3 border-right text-dark">İstek Listesi</a>
+            </div>
+            
+
+        </div>
+<!-- 1.navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">OnlineAV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kategoriler <i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ürünler<i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="+1" aria-disabled="true">Sepet</a>
+          </li>
+        </ul>
+        <form action="#" class="font-size-14 font-open" >
+            <a href="#" class="py-2 rounded-pill bg-primary">
+                <span class="font-size-20 px-2 text-white">
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span class=" px-3 py-2 rounded-pill text-dark bg-light">0</span>
+            </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+    </header>
+    <!-- main kısmı -->
+    <main id="main-site">
+         <!-- Sepet -->
+         <section id="cart" class="py-3">
+            <div class="container-fluid w-75">
+                <h5 class=" font-size-20">Sepetim</h5>
+
+                <!-- sepet items   -->
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <!-- cart item -->
+                                <div class="row border-top py-3 mt-3">
+                                    <div class="col-sm-2">
+                                        <img src="../assets/products/1.png" style="height: 120px;" alt="cart1" class="img-fluid">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <h5 class=" font-size-20">Samsung Galaxy 10</h5>
+                                        <small>Samsung</small>
+                                        <!-- ürün oylaması -->
+                                        <div class="d-flex">
+                                            <div class="rating text-warning font-size-12">
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="fas fa-star"></i></span>
+                                                <span><i class="far fa-star"></i></span>
+                                              </div>
+                                              <a href="#" class="px-2  font-size-14">20 oylama</a>
+                                        </div>
+                                        <!--  ürün oylaması-->
+
+                                        <!-- adet sayısı -->
+                                            <div class="adet d-flex pt-2">
+                                                <div class="d-flex  w-25">
+                                                    <button class="adet-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                                                    <input type="text" data-id="pro1" class="adet_sayısı border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                                    <button data-id="pro1" class="adet-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                                                </div>
+                                                <button type="submit" class="btn  text-danger px-3 border-right">Sil</button>
+                                                <button type="submit" class="btn  text-danger">Daha sonrası için kaydet</button>
+                                            </div>
+                                        <!-- adet sayısı -->
+
+                                    </div>
+
+                                    <div class="col-sm-2 text-right">
+                                        <div class="font-size-20 text-danger ">
+                                            <span class="product_price">2000₺</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- !cart item -->
+                            <!-- cart item -->
+                            <div class="row border-top py-3 mt-3">
+                                <div class="col-sm-2">
+                                    <img src="../assets/products/2.png" style="height: 120px;" alt="cart1" class="img-fluid">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h5 class=" font-size-20">Samsung Galaxy 10</h5>
+                                    <small>Samsung</small>
+                                    <!-- ürün oylaması -->
+                                    <div class="d-flex">
+                                        <div class="rating text-warning font-size-12">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="far fa-star"></i></span>
+                                          </div>
+                                          <a href="#" class="px-2  font-size-14">25 oylama</a>
+                                    </div>
+                                    <!--  ürün oylaması-->
+
+                                    <!-- ürün sayısı -->
+                                        <div class="adet d-flex pt-2">
+                                            <div class="d-flex w-25">
+                                                <button class="adet-up border bg-light"><i class="fas fa-angle-up" ></i></button>
+                                                <input type="text" class="adet_sayısı border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                                <button class="adet-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                                            </div>
+                                            <button type="submit" class="btn  text-danger px-3 border-right">Sil</button>
+                                            <button type="submit" class="btn  text-danger">Daha sonrası için kaydet</button>
+                                        </div>
+                                    <!--ürün sayısı-->
+
+                                </div>
+
+                                <div class="col-sm-2 text-right">
+                                    <div class="font-size-20 text-danger">
+                                        <span class="product_price">2000₺</span>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- !cart item -->
+                        </div>
+                        <!-- toplam section-->
+                        <div class="col-sm-3">
+                            <div class="sub-total border text-center mt-2">
+                                <h6 class="font-size-12 text-success py-3"><i class="fas fa-check"></i> Kargo ücretsiz.</h6>
+                                <div class="border-top py-4">
+                                    <h5 class="font-size-20">toplam (2 ürün):&nbsp; <span class="text-danger"><span class="text-danger" id="deal-price">2000₺</span> </span> </h5>
+                                    <button type="submit" class="btn btn-warning mt-3">Satın Al</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !toplam section-->
+                    </div>
+                <!--  !sepet items   -->
+            </div>
+        </section>
+        <!-- çok satanlar -->
+        <section id="cok-satanlar">
+          <div class="container py-5">
+          <h4 class="font-size-20">Çok Satanlar</h4>  
+          <hr>
+
+          <!-- ikinci slider cok satanlar için -->
+          <div class="owl-carousel owl-theme">
+            <div class="item py-2">
+              <div class="product">
+                <a href="#"> <img src="../assets/products/1.png" alt="1" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung  Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="fiyat py-2">
+                    <span>2000₺</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12"> Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product">
+                <a href="#"> <img src="../assets/products/2.png" alt="2" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung  Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="fiyat py-2">
+                    <span>2000₺</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12"> Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product">
+                <a href="#"> <img src="../assets/products/3.png" alt="3" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung  Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="fiyat py-2">
+                    <span>2000₺</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12"> Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product">
+                <a href="#"> <img src="../assets/products/4.png" alt="4" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung  Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="fiyat py-2">
+                    <span>2000₺</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12"> Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product">
+                <a href="#"> <img src="../assets/products/5.png" alt="5" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung  Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="fiyat py-2">
+                    <span>2000₺</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12"> Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+            <div class="item py-2">
+              <div class="product">
+                <a href="#"> <img src="../assets/products/6.png" alt="6" class="img-fluid"></a>
+                <div class="text-center">
+                  <h6>Samsung  Galaxy 10</h6>
+                  <div class="rating text-warning font-size-12">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                  </div>
+                  <div class="fiyat py-2">
+                    <span>2000₺</span>
+                  </div>
+                  <button type="submit" class="btn btn-warning font-size-12"> Sepete Ekle</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          </div>
+        </section>
+        
+        
+
+    </main>
+    <!-- alt kısım -->
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <h4>OnlineAV</h4>
+            <p class="font-size-12 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quidem.</p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h4>ABONE OL</h4>
+            <form class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary mb-2 mt-2">Abone Ol</button>
+              </div>
+            </form>
+            
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4>İnformation</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-size-12 text-white-50 pb-1">Hakkımızda</a>
+              <a href="#" class="font-size-12 text-white-50 pb-1">Kargo</a>
+              <a href="#" class="font-size-12 text-white-50 pb-1">Gizlilik Politikası</a>
+              <a href="#" class="font-size-12 text-white-50 pb-1">Kullanıcı Sözleşmesi</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4>Hesap</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-size-12 text-white-50 pb-1">Hesabım</a>
+              <a href="#" class="font-size-12 text-white-50 pb-1">Sipariş Geçmişi</a>
+              <a href="#" class="font-size-12 text-white-50 pb-1">İstek listesi</a>
+              <a href="#" class="font-size-12 text-white-50 pb-1">Kargom Nerede?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- COPYRIGHTS -->
+    <div class="copyright text-center text-white-50 bg-dark">
+      <p class="font-size-14">&copy; Copyrights 2021. Desing By Ertan AKTAŞ
+      </p>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- isot plug-in -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
